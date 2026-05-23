@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="memory-game.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo">
+          <img src="images/logo.png" />
+          <h1>Memory Game</h1>
+        </div>
+        <div class="history">
+          <h1>History</h1>
+          <br />
+          <h4>Game Id &nbsp &nbsp Time Taken</h4>
+          <!-- <p>32e23r</p>
+          <p>23434</p>
+          <p>1234</p> -->
+        </div>
+      </div>
+      <div class="nav">
+        <div class="start">
+          <button id="btn" onclick="startGame()">Start</button>
+          <p class="timer">00:00</p>
+        </div>
+        <h2>Game Id :<span id="game-id">----</span></h2>
+      </div>
+      <div class="game">
+        <div class="img-background" onclick="flip('alarm')">
+          <img src="images/alarm.png" />
+        </div>
+
+        <div class="img-background" onclick="flip('cat')">
+          <img src="images/brown-cat.png" />
+        </div>
+
+        <div class="img-background" onclick="flip('bus')">
+          <img src="images/bus.png" />
+        </div>
+
+        <div class="img-background" onclick="flip('cherries')">
+          <img src="images/cherries.png" />
+        </div>
+
+        <div class="img-background" onclick="flip('giftBox')">
+          <img src="images/gift-box.png" />
+        </div>
+
+        <div class="img-background" onclick="flip('honeyBee')">
+          <img src="images/honey-bee.png" />
+        </div>
+
+        <div class="img-background" onclick="flip('hulk')">
+          <img src="images/hulk.png" />
+        </div>
+
+        <div class="img-background" onclick="flip('mickeyMouse')">
+          <img src="images/mickey-mouse.png" />
+        </div>
+
+        <div class="img-background" onclick="flip('orangeCat')">
+          <img src="images/orange-cat.png" />
+        </div>
+
+        <div class="img-background" onclick="flip('pooh')">
+          <img src="images/pooh.png" />
+        </div>
+
+        <div class="img-background" onclick="flip('rubikCube')">
+          <img src="images/rubik-cube.png" />
+        </div>
+
+        <div class="img-background" onclick="flip('simba')">
+          <img src="images/simba.png" />
+        </div>
+
+        <div class="img-background" onclick="flip('smilingEmoji')">
+          <img src="images/smiling-emoji.png" />
+        </div>
+
+        <div class="img-background" onclick="flip('traficPolice')">
+          <img src="images/trafic-police.png" />
+        </div>
+
+        <div class="img-background" onclick="flip('watermelon')">
+          <img src="images/watermelon.png" />
+        </div>
+
+        <div class="img-background" onclick="flip('alarm')">
+          <img src="images/alarm.png" />
+        </div>
+
+        <div class="img-background" onclick="flip('cat')">
+          <img src="images/brown-cat.png" />
+        </div>
+
+        <div class="img-background" onclick="flip('bus')">
+          <img src="images/bus.png" />
+        </div>
+
+        <div class="img-background" onclick="flip('cherries')">
+          <img src="images/cherries.png" />
+        </div>
+
+        <div class="img-background" onclick="flip('giftBox')">
+          <img src="images/gift-box.png" />
+        </div>
+
+        <div class="img-background" onclick="flip('honeyBee')">
+          <img src="images/honey-bee.png" />
+        </div>
+
+        <div class="img-background" onclick="flip('hulk')">
+          <img src="images/hulk.png" />
+        </div>
+
+        <div class="img-background" onclick="flip('mickeyMouse')">
+          <img src="images/mickey-mouse.png" />
+        </div>
+
+        <div class="img-background" onclick="flip('orangeCat')">
+          <img src="images/orange-cat.png" />
+        </div>
+
+        <div class="img-background" onclick="flip('pooh')">
+          <img src="images/pooh.png" />
+        </div>
+
+        <div class="img-background" onclick="flip('rubikCube')">
+          <img src="images/rubik-cube.png" />
+        </div>
+
+        <div class="img-background" onclick="flip('simba')">
+          <img src="images/simba.png" />
+        </div>
+
+        <div class="img-background" onclick="flip('smilingEmoji')">
+          <img src="images/smiling-emoji.png" />
+        </div>
+
+        <div class="img-background" onclick="flip('traficPolice')">
+          <img src="images/trafic-police.png" />
+        </div>
+
+        <div class="img-background" onclick="flip('watermelon')">
+          <img src="images/watermelon.png" />
+        </div>
+      </div>
+      <div class="win">
+        <h1>YOU WIN</h1>
+        <img src="images/output-onlinegiftools.gif" />
+      </div>
+    </div>
+    <script defer src="game.js"></script>
+  </body>
+</html>

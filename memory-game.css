@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+body {
+  overflow-x: hidden;
+}
+.header {
+  position: absolute;
+  display: flex;
+  margin: auto;
+  width: 3000px;
+  margin: 30px;
+  letter-spacing: 5px;
+}
+.header h1 {
+  margin-right: 400px;
+}
+.header .history {
+  margin-left: 900px;
+}
+.header .history h4 {
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+.header .history p {
+  margin-left: 3px;
+  font-size: 13px;
+  word-spacing: 40px;
+  font-weight: 900;
+  line-height: 11px;
+}
+.logo {
+  display: flex;
+  font-size: 18px;
+}
+.logo img {
+  height: 40px;
+}
+.nav {
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  transform: translate(290px, 90px);
+}
+.nav h2 {
+  margin-top: 20px;
+  transform: translate(235px, 20px);
+  position: absolute;
+}
+.nav .start {
+  margin-right: 585px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+.nav .start button {
+  font-family: sans-serif;
+  margin: 10px;
+  padding: 7px 30px;
+  font-size: 18px;
+  background-color: purple;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+.nav .start button:hover {
+  background-color: white;
+  border: 1px solid purple;
+  color: black;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(6, 170px);
+  grid-template-rows: repeat(5, 150);
+  row-gap: 15px;
+  column-gap: 40px;
+  margin: 40px 0 0 0;
+  transform: translateY(80px);
+  align-items: center;
+  justify-content: center;
+}
+.game img {
+  height: 150px;
+  width: 170px;
+  padding: 20px;
+  background-color: rgb(255, 235, 255);
+  opacity: 0;
+}
+.game .img-background {
+  height: 150px;
+  width: 170px;
+  background-color: purple;
+}
+.win {
+  position: relative;
+  visibility: hidden;
+}
+.win h1 {
+  position: absolute;
+  font-size: 50px;
+  transform: translate(450%, -600px);
+}
+.win img {
+  transform: translate(50%, -700px);
+  width: 50%;
+}
